@@ -20,7 +20,8 @@ int main(){
     int color[NUM_LEADS] = {GREEN_LED, RED_LED, BLUE_LED};
 
     setupGPIO();
-
+    userInput();
+    
     while(!error){
         setLED(color[ledNum], ON);
         delay(DELAY);
