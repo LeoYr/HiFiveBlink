@@ -16,6 +16,8 @@ setupGPIO:
     sw    t1, GPIO_OUTPUT_XOR(t0)   //set XOR so the RGB pins are active high
     sw    x0, GPIO_OUTPUT_VAL(t0)   //set all RGB pins to zero to clear them
 
+    
+
     lw ra, 0(sp)        //restore return address
     addi sp, sp, 4      //deallocating the stack pointer
 
