@@ -13,17 +13,18 @@
 #define BLUE_LED    0x200000
 #define GREEN_LED   0x080000
 
-#define ZERO_LED    0x000000
-#define ONE_LED     0x20
-#define TWO_LED     0x10
-#define THREE_LED   0x30
-#define FOUR_LED    0x8
-#define FIVE_LED    0x28
+
+#define ZERO_LED    0x0
+#define ONE_LED     0x4
+#define TWO_LED     0x8
+#define THREE_LED   0xC
+#define FOUR_LED    0x10
+#define FIVE_LED    0x14
 #define SIX_LED     0x18
-#define SEVEN_LED   0x38
-#define EIGHT_LED   0x4
+#define SEVEN_LED   0x1C
+#define EIGHT_LED   0x20
 #define NINE_LED    0x24
-#define TEST_LED    0x20000
+// #define TEST_LED    0x20000
 
 void setupGPIO();
 int setLED(int color, int status);
