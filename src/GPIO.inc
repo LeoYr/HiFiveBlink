@@ -1,8 +1,8 @@
 .equ GPIO_OUTPUT_EN,    0x08    
 .equ GPIO_OUTPUT_VAL,   0x0C    
 .equ GPIO_OUTPUT_XOR,   0x40    # this will be used to force the pins to be active low instead of high
-.equ GPIO_INPUT_EN,     0x04
-.equ GPIO_INPUT_VAL,    0x00
+
+.equ GPIO_IOF_EN,       0x38
 
 .equ GPIO_GRB_PINS,     0x680000
 .equ GPIO_RED_PINS,     0x400000

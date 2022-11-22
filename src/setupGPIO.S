@@ -11,10 +11,11 @@ setupGPIO:
     
     li    t0, GPIO_CTRL_ADDR
     li    t1, GPIO_PINS
-
-    sw    t1, GPIO_OUTPUT_EN(t0)    //enable output on RGB pins so they are writable
-    sw    t1, GPIO_OUTPUT_XOR(t0)   //set XOR so the RGB pins are active high
-    sw    x0, GPIO_OUTPUT_VAL(t0)   //set all RGB pins to zero to clear them
+    sw    zero, GPIO_IOF_EN(t0)
+    
+    sw    t1, GPIO_OUTPUT_EN(t0)    //enable output on GPIO pins so they are writable
+    sw    t1, GPIO_OUTPUT_XOR(t0)   //set XOR so the GPIO pins are active high
+    sw    x0, GPIO_OUTPUT_VAL(t0)   //set all GPIO pins to zero to clear them
 
     
 

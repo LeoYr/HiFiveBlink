@@ -1,5 +1,5 @@
 .section .text
-.align   2
+.align   4
 .globl   setLED
 
 .include "Memory_map.inc"
